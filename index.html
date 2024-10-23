@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jeu - Pierre Feuille Ciseaux</title>
+</head>
+<body>
+    <h1>Pierre Feuille Ciseaux</h1>
+    <h2>Règles du jeu</h2>
+    <p>Chaque partie se joue en 1 unique tour. Chaque joueur choisi entre pierre, feuille et ciseau ( vous en cliquant sur l'image correspondante). les choix sont comparés et le vainqueur est désigné selon les règles suivantes :</p>
+    <ul>
+        <li> - La pierre gagne contre les ciseaux (la pierre casse les ciseaux).</li>
+        <li> - La feuille gagne contre la pierre (la feuille recouvre la pierre).</li>
+        <li> - Les ciseaux gagnent contre la feuille (les ciseaux coupent la feuille).</li>
+        <li> - 2 objets identiques se neutralisent (égalité).</li>
+    </ul>
+    <div id="container">
+        <img id="paper" src="paper.png" alt="feuille">
+        <img id="rock" src="rock.png" alt="pierre">
+        <img id="scissors" src="scissors.png" alt="ciseaux">
+    </div>
+    <p id="play">Vous avez choisi: Rien | L'ordinateur a choisi: Rien </p>
+    <p id="result">Partie non démarrée </p>
+    <p id="score">Victoires: Vous: 0 | Ordinateur: 0 | Egalité: 0</p>
+    <button id="reset">Reset les scores</button>
+    <script src="main.js"></script>
+</body>
+</html>

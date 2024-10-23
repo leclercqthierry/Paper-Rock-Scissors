@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    @media screen and (min-width: 768px) {
+        font-size: 1rem;
+    }
+}
+
+body{
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0.4rem auto;
+    @media screen and (min-width: 768px) {
+        font-size: 3rem;
+    }
+}
+
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0.5rem auto;
+    @media screen and (min-width: 768px) {
+        font-size: 2rem;
+    }
+}
+
+p{
+    text-align: justify;
+    margin: 0.8rem auto;
+}
+
+ul{
+    margin: 1rem 0;
+    padding: 0 1rem;
+}
+
+li{
+    list-style:none;
+    margin: 0.5rem 0;
+}
+
+#container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    @media screen and (min-width: 768px) {
+        max-width: 600px;
+    }
+}
+
+img{
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    object-fit: cover;
+    &:hover{
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 200px;
+    }
+}
+
+#play{
+    width: 100%;
+    text-align: center;
+    margin:0;
+}
+
+#reset{
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: #1e6231bb;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover{
+        background-color: #1e6231;
+    }
+}
+
+#score{
+    margin-top: 0;
+}
